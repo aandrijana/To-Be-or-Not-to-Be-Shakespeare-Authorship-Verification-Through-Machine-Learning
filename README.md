@@ -114,11 +114,32 @@ shakespeare_project/
 
 Key prior work this project builds on:
 
-- Marsden et al. (2013) — marker word approach, 90%+ accuracy on 168 plays
-- Arefin et al. (2014) — Jensen-Shannon divergence clustering of 256 Elizabethan texts
-- Kernot, Bossomaier & Bradbury (2018) — RPAS psycholinguistic framework
-- Boyd & Pennebaker (2015) — psychological scoring applied to Double Falsehood
-- Segarra et al. (2016) & Eisen et al. (2018) — Word Adjacency Networks
-- Plecháč (2019) — metrical features and sliding-window attribution for Henry VIII
-- Skurla et al. (2026) — SHAP applied to stylometric classification
-- Bucci & Freedman (1981) — Referential Activity and the language of depression
+1. Shapiro, J. Contested Will: Who Wrote Shakespeare? (Simon and Schuster, New York, 2010).
+2. Taylor, G. & Egan, G. The New Oxford Shakespeare: Authorship Companion (Oxford University Press, Oxford,
+2017).
+3. Stamatatos, E. A survey of modern authorship attribution methods. J. Am. Soc. for Inf. Sci. Technol. 60,
+538–556 (2009).
+7/8
+4. Mendenhall, T. C. The characteristic curves of composition. Science (1887).
+5. Burrows, J. Word-patterns and story-shapes: The statistical analysis of narrative style. Lit. Linguist. Comput.
+(1987).
+6. Savoy, J. Machine Learning Methods for Stylometry: Authorship Attribution and Author Profiling (Springer,
+Cham, Switzerland, 2020).
+7. Marsden, J., Budden, D., Craig, H. & Moscato, P. Language individuation and marker words: Shakespeare and
+his maxwell’s demon. PLOS ONE (2013).
+8. Arefin, A. S., Vimieiro, R., Riveros, C., Craig, H. & Moscato, P. An information theoretic clustering approach
+for unveiling authorship affinities in shakespearean era plays and poems. PLOS ONE (2014).
+9. Boyd, R. L. & Pennebaker, J. W. Did shakespeare write double falsehood? identifying individuals by creating
+psychological signatures with text analysis. Psychol. Sci. (2015).
+10. Kernot, D., Bossomaier, T. & Bradbury, R. Novel psychological text feature rpas and authorship analysis of
+shakespeare, marlowe, and cary. (2018).
+11. Segarra, S., Eisen, M., Egan, G. & Ribeiro, A. Attributing the authorship of the henry vi plays by word
+adjacency. Shakespear. Q. (2016).
+12. Segarra, S., Eisen, M., Egan, G. & Ribeiro, A. Authorship attribution through function word adjacency networks.
+(2018).
+13. Plecháč, P. Relative contributions of shakespeare and fletcher in henry viii: An analysis based on most frequent
+words and most frequent rhythmic patterns. Digit. Scholarsh. Humanit. (2019).
+14. Lundberg, S. M. & Lee, S.-I. A unified approach to interpreting model predictions. In Advances in Neural
+Information Processing Systems (NeurIPS) (2017).
+15. Burrows, J. All the way through: Testing for authorship in different frequency strata. Lit. Linguist. Comput.
+(2007)
