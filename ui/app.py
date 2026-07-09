@@ -8,7 +8,7 @@ from utils.loader import load_and_initialize_pipeline
 from utils.text_utils import get_highlighted_text
 
 st.set_page_config(page_title="Shakespeare Authorship Workbench", layout="wide")
-disputed_df, per_play_summary, shap_values_disputed, feature_names, lsh, text_registry = load_and_initialize_pipeline()
+disputed_df, per_play_summary, shap_values_disputed, feature_names, text_registry = load_and_initialize_pipeline()
 available_plays = sorted(disputed_df["author"].unique().tolist())
 
 # ==========================================
