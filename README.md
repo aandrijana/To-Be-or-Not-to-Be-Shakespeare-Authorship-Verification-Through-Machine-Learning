@@ -155,12 +155,21 @@ streamlit run app.py
 ```
 shakespeare_project/
 │
-├── texts/                                    # Raw + cleaned corpus
+├── notebooks/
+│   ├── 01_data_collection_eda.ipynb          # Corpus acquisition, cleaning, EDA
+│   ├── 02_feature_engineering.ipynb          # Chunking, feature extraction, Zeta analysis
+│   ├── 03_modeling.ipynb                     # Classifier training, CV, test evaluation
+│   ├── 04_shap_disputed_inference.ipynb      # Disputed-text inference + SHAP
 │
-├── 01_data_collection_eda.ipynb              # Corpus acquisition, cleaning, EDA
-├── 02_feature_engineering.ipynb              # Chunking, feature extraction, Zeta analysis
-├── 03_modeling.ipynb                         # Classifier training, CV, test evaluation
-├── 04_shap_disputed_inference.ipynb          # Disputed-text inference + SHAP
+├── ui/
+│   ├── app.py                                # Streamlit dashboard 
+│   ├── requirements.txt                      # Python dependencies for the app
+│   ├── shap_results.pkl                      # Precomputed SHAP values + disputed predictions
+│   ├── preprocessed_corpus_final.pkl         # Cleaned corpus used for text lookup / discovery engine
+│   └── utils/
+│       ├── __init__.py
+│       ├── loader.py                         # Loads pkls
+│       └── text_utils.py                     # SHAP-based text highlighting logic
 │
 ├── report/
 │   └── report.pdf
