@@ -69,9 +69,7 @@ class, since the goal is a clean, single-author signal.
 ### Stage 1: Data Collection & Cleaning
 - Texts sourced from Project Gutenberg (and Double Falsehood from the Greenblatt Cardenio
   Project).
-- Non-authorial text (editorial intros, character lists, licensing headers) was removed;
-  Gutenberg headers/footers were stripped automatically, everything else by hand, since the
-  corpus was small enough to check file-by-file.
+- Non-authorial text was removed to ensure that only dramatic content was analyzed. Gutenberg headers, footers, licensing information, and dramatis personae sections were removed automatically, while publisher introductions and scholarly notes were manually inspected and removed due to the small corpus size.
 - Files containing multiple plays were split into individual play files.
 - Named entities (character/place names) were masked with a generic placeholder token, so
   the model can't learn to associate specific names with authorship rather than style.
@@ -189,6 +187,7 @@ Plays used in this project were obtained from the following sources:
 - The Cardenio Project (Greenblatt et al.)  
   https://cardenio.net/
   
+We acknowledge these projects for providing access to digitized literary texts that enabled the creation of the corpus used in this study.
 ## References
 
 Key prior work this project builds on:
