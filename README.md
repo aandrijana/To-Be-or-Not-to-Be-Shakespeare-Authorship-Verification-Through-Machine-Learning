@@ -21,12 +21,12 @@ own probability; these are aggregated to give an overall verdict for the play al
 sense of how much that signal varies across the text.
 
 The trained model is applied to five disputed texts:
-- **Henry VI Parts 1, 2, and 3** — a collaborative history widely believed to involve other
+- **Henry VI Parts 1, 2, and 3** : a collaborative history widely believed to involve other
   hands; a dedicated Shakespeare-vs-Marlowe classifier is used here, since Marlowe's
   involvement (particularly in Part I) is the specific, most-discussed hypothesis in the
   literature
-- **The Spanish Tragedy** — established as Thomas Kyd's, included as a check on the pipeline
-- **Double Falsehood** — Theobald's 1728 adaptation, traditionally linked to the lost
+- **The Spanish Tragedy** : established as Thomas Kyd's, included as a check on the pipeline
+- **Double Falsehood** : Theobald's 1728 adaptation, traditionally linked to the lost
   *Cardenio* and a claimed Shakespeare/Fletcher collaboration; a dedicated
   Shakespeare-vs-Fletcher classifier is used here
 
