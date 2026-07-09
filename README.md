@@ -52,7 +52,7 @@ class, since the goal is a clean, single-author signal.
 | Fletcher | Beggar's Bush, The Chances, The Tragedy of Valentinian, The Wild Goose Chase | Confirmed co-author of late Shakespeare plays; key reference for Double Falsehood |
 | Massinger | The Great Duke of Florence, The Bondman, The Maid of Honour | Broadens the negative class beyond Shakespeare's closest rivals |
 | Greene | Orlando Furioso, Friar Bacon and Friar Bungay, James IV | Broadens the negative class; occasionally raised in the wider literature as a Henry VI candidate |
-| Kyd | Cornelia, The Tragedy of Soliman and Perseda | Author of *The Spanish Tragedy*; baseline for that comparison |
+| Kyd | Cornelia, The Tragedy of Soliman and Perseda | Author of The Spanish Tragedy; included as a comparison baseline, as Shakespeare is traditionally associated with later additions to The Spanish Tragedy. |
 | Nashe | Summer's Last Will and Testament | Candidate co-author for Henry VI; prose stylist, broadens the class further |
 
 ### Disputed Texts — 5 texts (94,001 words), held out entirely from training
