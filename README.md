@@ -66,7 +66,7 @@ class, since the goal is a clean, single-author signal.
 
 ## Methodology
 
-### Stage 1 — Data Collection & Cleaning
+### Stage 1: Data Collection & Cleaning
 - Texts sourced from Project Gutenberg (and Double Falsehood from the Greenblatt Cardenio
   Project).
 - Non-authorial text (editorial intros, character lists, licensing headers) was removed;
@@ -79,7 +79,7 @@ class, since the goal is a clean, single-author signal.
   (dash characters, spacing before punctuation) between source editions rather than real
   style, and was corrected before finalizing features.
 
-### Stage 2 — Feature Extraction
+### Stage 2: Feature Extraction
 Each 1,000-word chunk is represented as a **2,182-dimensional** feature vector:
 - **Function-word frequencies** — 122 function words (articles, prepositions, pronouns,
   auxiliaries, conjunctions), length-normalized
@@ -91,7 +91,7 @@ Each 1,000-word chunk is represented as a **2,182-dimensional** feature vector:
 The train/test split is done **by whole play**, not by chunk, so no play's vocabulary leaks
 between training and evaluation; the same grouping is used for cross-validation.
 
-### Stage 3 — Classification
+### Stage 3: Classification
 Four classifiers were trained and compared via 5-fold grouped cross-validation (macro F1,
 chosen over accuracy due to class imbalance):
 
@@ -102,20 +102,16 @@ chosen over accuracy due to class imbalance):
 | Gradient Boosting | 0.852 ± 0.036 |
 | Random Forest | 0.679 ± 0.146 |
 
-A multiclass (8-author) model was also tested to get a full author-probability distribution
-directly, but performed poorly and wasn't used further.
 
-Two **dedicated pairwise classifiers** (Logistic Regression) were also trained —
-Shakespeare vs. Marlowe and Shakespeare vs. Fletcher — to compare specific disputed texts
+
+Two **dedicated pairwise classifiers** (Logistic Regression) were also trained,
+Shakespeare vs. Marlowe and Shakespeare vs. Fletcher, to compare specific disputed texts
 against one candidate collaborator at a time, rather than "not Shakespeare" in general.
 
-### Stage 4 — Explainability
-SHAP values (main model) and raw logistic-regression coefficients (pairwise models) are used
-to identify which features drive predictions on the disputed texts. Any suspiciously
-high-ranking feature is checked for per-play concentration and inspected in context before
-being trusted as real stylistic signal rather than a formatting or edition artifact.
+### Stage 4: Explainability
+SHAP values (main model) and raw logistic regression coefficients (pairwise models) were used to identify the features driving predictions on the disputed texts. High-ranking features were then checked for per-play concentration and examined in context to determine whether they reflected genuine stylistic patterns or formatting and edition artifacts.
 
-### Stage 5 — Disputed Text Attribution
+### Stage 5 : Disputed Text Attribution
 Each disputed play is chunked the same way as the training data and every chunk gets an
 independent `P(Shakespeare)`. These are aggregated per play (mean/std/min/max) to summarize
 the overall verdict and how much it varies within the text.
@@ -156,8 +152,7 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-It expects the precomputed artifacts (`disputed_df`, `per_play_summary`,
-`shap_values_disputed`, `feature_names`, `text_registry`)
+-It expects the precomputed artifacts (`disputed_df`, `per_play_summary`, `shap_values_disputed`, `feature_names`, `text_registry`)
 ---
 
 ## Project Structure
