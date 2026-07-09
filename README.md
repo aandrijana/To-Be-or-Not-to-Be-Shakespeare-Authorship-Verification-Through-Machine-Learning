@@ -179,7 +179,16 @@ shakespeare_project/
 ```
 
 ---
+## Data Sources
 
+Plays used in this project were obtained from the following sources:
+
+- Project Gutenberg <br>
+  https://www.gutenberg.org/
+
+- The Cardenio Project (Greenblatt et al.)  
+  https://cardenio.net/
+  
 ## References
 
 Key prior work this project builds on:
