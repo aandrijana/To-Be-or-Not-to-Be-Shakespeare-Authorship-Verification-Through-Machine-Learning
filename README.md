@@ -4,6 +4,10 @@
 > A computational stylometry pipeline for Shakespearean authorship attribution, using function-word frequencies, character n-grams, Burrows' Zeta marker words, and SHAP-based explainability, applied to five genuinely disputed Early Modern texts.
 
 ---
+Collaborators: Andrijana Kešelj, Anđela Maksimović
+
+This project is done by the students of DSAI at ETF Sarajevo.
+---
 
 ## What This Project Does
 
