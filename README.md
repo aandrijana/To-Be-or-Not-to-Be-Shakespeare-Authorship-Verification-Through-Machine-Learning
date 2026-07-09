@@ -104,12 +104,10 @@ chosen over accuracy due to class imbalance):
 
 
 
-Two **dedicated pairwise classifiers** (Logistic Regression) were also trained,
-Shakespeare vs. Marlowe and Shakespeare vs. Fletcher, to compare specific disputed texts
-against one candidate collaborator at a time, rather than "not Shakespeare" in general.
+
 
 ### Stage 4: Explainability
-SHAP values (main model) and raw logistic regression coefficients (pairwise models) were used to identify the features driving predictions on the disputed texts. High-ranking features were then checked for per-play concentration and examined in context to determine whether they reflected genuine stylistic patterns or formatting and edition artifacts.
+SHAP values were used to identify the features driving predictions on the disputed texts. High-ranking features were then checked for per-play concentration and examined in context to determine whether they reflected genuine stylistic patterns or formatting and edition artifacts.
 
 ### Stage 5 : Disputed Text Attribution
 Each disputed play is chunked the same way as the training data and every chunk gets an
@@ -123,8 +121,7 @@ the overall verdict and how much it varies within the text.
 - A cleaned corpus of 62 Early Modern texts: 33 Shakespeare works, 23 works across seven
   contemporary authors, and 5 held-out disputed texts 
 - Comparative classifier evaluation with grouped cross-validation
-- SHAP feature-importance analysis for the main model, and coefficient inspection for the
-  Marlowe/Fletcher pairwise models
+- SHAP feature-importance analysis 
 - Per-chunk and per-play authorship probability scores for Henry VI I–III, The Spanish
   Tragedy, and Double Falsehood
 ---
@@ -164,7 +161,6 @@ shakespeare_project/
 ├── 02_feature_engineering.ipynb              # Chunking, feature extraction, Zeta analysis
 ├── 03_modeling.ipynb                         # Classifier training, CV, test evaluation
 ├── 04_shap_disputed_inference.ipynb          # Disputed-text inference + SHAP
-├── 06_pairwise_author_attribution.ipynb      # Shakespeare-vs-Marlowe / Shakespeare-vs-Fletcher
 │
 ├── report/
 │   └── report.pdf
