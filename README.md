@@ -170,9 +170,6 @@ shakespeare_project/
 │       ├── loader.py                         # Loads pkls
 │       └── text_utils.py                     # SHAP-based text highlighting logic
 │
-├── report/
-│   └── report.pdf
-│
 └── README.md
 ```
 
