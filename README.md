@@ -152,8 +152,6 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
--It expects the precomputed artifacts (`disputed_df`, `per_play_summary`, `shap_values_disputed`, `feature_names`, `text_registry`)
----
 
 ## Project Structure
 
