@@ -30,8 +30,8 @@ The trained model is applied to five disputed texts:
   *Cardenio* and a claimed Shakespeare/Fletcher collaboration; a dedicated
   Shakespeare-vs-Fletcher classifier is used here
 
-*(Titus Andronicus was also collected as a candidate disputed text — it's traditionally
-attributed to a Shakespeare-Peele collaboration — but was excluded from the final pipeline:
+*(Titus Andronicus was also collected as a candidate disputed text, it's traditionally
+attributed to a Shakespeare-Peele collaboration, but was excluded from the final pipeline:
 there wasn't enough surviving Peele text to support a reliable comparison.)*
 
 ---
