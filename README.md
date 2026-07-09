@@ -1,13 +1,16 @@
 # To Be or Not to Be Shakespeare
 ### Authorship Verification Through Machine Learning
 
-> A computational stylometry pipeline for Shakespearean authorship attribution, using function-word frequencies, character n-grams, Burrows' Zeta marker words, and SHAP-based explainability, applied to five genuinely disputed Early Modern texts.
-
----
 Collaborators: Andrijana Kešelj, Anđela Maksimović
 
 This project is done by the students of DSAI at ETF Sarajevo.
+
 ---
+> A computational stylometry pipeline for Shakespearean authorship attribution, using function-word frequencies, character n-grams, Burrows' Zeta marker words, and SHAP-based explainability, applied to five genuinely disputed Early Modern texts.
+
+---
+
+
 
 ## What This Project Does
 
