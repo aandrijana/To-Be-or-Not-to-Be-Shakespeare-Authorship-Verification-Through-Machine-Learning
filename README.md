@@ -129,6 +129,7 @@ the overall verdict and how much it varies within the text.
 
 A Streamlit app (`app.py`) provides a browser-based view into the precomputed pipeline
 outputs (per-play probabilities and SHAP values).
+### [Click for Dashboard](https://to-be-or-not-to-be-shakespeare.streamlit.app/)
 
 **Attribution Dashboard tab**
 - Pick a disputed play and see the model's verdict (Shakespeare / Contemporary) and its mean
